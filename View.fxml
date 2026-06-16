@@ -34,7 +34,11 @@
             <Font size="15.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Button fx:id="submit" layoutX="462.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Submit">
+=======
+      <Button fx:id="Save" layoutX="258.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Submit">
+>>>>>>> c322cce66180d23d4bf9c0a617ac536c36d5a968
          <font>
             <Font size="25.0" />
          </font>
@@ -49,7 +53,7 @@
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="236.0" layoutY="234.0" text="DOB">
+      <Label layoutX="236.0" layoutY="234.0" text="DoB">
          <font>
             <Font size="25.0" />
          </font>
@@ -59,6 +63,7 @@
             <Font size="22.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <TextField fx:id="textfile_name" layoutX="415.0" layoutY="179.0" prefHeight="36.0" prefWidth="313.0" />
       <DatePicker fx:id="date_picker" layoutX="415.0" layoutY="234.0" prefHeight="36.0" prefWidth="313.0" />
       <RadioButton fx:id="ratiobutton_gic" layoutX="415.0" layoutY="397.0" mnemonicParsing="false" text="GIC">
@@ -70,6 +75,11 @@
          </toggleGroup>
       </RadioButton>
       <RadioButton fx:id="ratiobutton_gtr" layoutX="415.0" layoutY="325.0" mnemonicParsing="false" text="GTR" toggleGroup="$Group_departement_GTR">
+=======
+      <TextField layoutX="415.0" layoutY="179.0" prefHeight="36.0" prefWidth="313.0" />
+      <DatePicker layoutX="415.0" layoutY="234.0" prefHeight="36.0" prefWidth="337.0" />
+      <RadioButton layoutX="415.0" layoutY="397.0" mnemonicParsing="false" text="GIC">
+>>>>>>> c322cce66180d23d4bf9c0a617ac536c36d5a968
          <font>
             <Font size="18.0" />
          </font>
@@ -79,7 +89,16 @@
             <Font size="18.0" />
          </font>
       </RadioButton>
+<<<<<<< HEAD
       <Label fx:id="result" layoutX="840.0" layoutY="603.0" text="Result: ">
+=======
+      <RadioButton layoutX="415.0" layoutY="361.0" mnemonicParsing="false" text="AMS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="759.0" layoutY="603.0" text="Result: ">
+>>>>>>> c322cce66180d23d4bf9c0a617ac536c36d5a968
          <font>
             <Font size="22.0" />
          </font>
