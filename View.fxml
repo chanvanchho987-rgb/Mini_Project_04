@@ -48,7 +48,7 @@
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="236.0" layoutY="234.0" text="DOB">
+      <Label layoutX="236.0" layoutY="234.0" text="DoB">
          <font>
             <Font size="25.0" />
          </font>
