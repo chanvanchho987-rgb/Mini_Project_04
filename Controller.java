@@ -1,5 +1,9 @@
+import java.io.FileWriter;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -80,34 +84,49 @@ public class Controller {
 
         //
         ArrayList<String> courses = new ArrayList<>();
-        if (checkbox_oop.isSelected()) {
-            courses.add("Networks");
+        if (checkboxnetwork.isSelected()) {
+            courses.add("Network");
         }
         if (checkbox_operating.isSelected()) {
             courses.add("Operating Systems");
         }
-        if (checkboxnetwork.isSelected()) {
+        if (checkbox_oop.isSelected()) {
             courses.add("OOP");
         }
+
 
         //
         String result_text = "Name: " + name + "\n" +
                 "Date of Birth: " + dob + "\n" +
                 "Departement: " + departement + "\n" +
-                "Courses: " + "\n" +
-                "   - " + String.join("\n   - ", courses);
+                "Courses: " + "\n";
+                
 
         //
         if (courses.size() == 0) {
-            result_text = result_text + "N/A";
+            result_text = result_text + "\n   - N/A";
         } else {
-            for (int i = 1; i < courses.size(); i++) {
-                result_text = result_text + "\n   - " + courses.get(i);
+            for (int i = 0; i < courses.size(); i++) {
+                result_text = result_text + "   - " + courses.get(i) + "\n";
             }
         }
+        Date date = new Date();
+        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HHmmssSSS");
+        String format_date = formatter.format(date);
+        System.out.println(format_date);
 
-        System.out.println(result_text);
 
+        try {
+            FileWriter writer = new FileWriter(format_date + ".txt");
+            writer.write(result_text);
+            writer.close();
+            result.setText("Data saved to " + format_date + ".txt");
+        } catch (Exception e) {
+
+        }
+
+        
+        
     }
 
     @FXML

@@ -1,0 +1,7 @@
+Name: fgdrga
+Date of Birth: 2026-06-04
+Departement: GTR
+Courses: 
+   - Network
+   - Operating Systems
+   - OOP
