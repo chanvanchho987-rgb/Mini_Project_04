@@ -90,11 +90,26 @@ public class Controller {
             courses.add("OOP");
         }
 
+        //
+        String result_text = "Name: " + name + "\n" +
+                             "Date of Birth: " + dob + "\n" +
+                             "Departement: " + departement + "\n" +
+                             "Courses: " + "\n" + 
+                             "   - " + String.join("\n   - ", courses);
+
         // 
-        System.out.println(name);
-        System.out.println(dob);
-        System.out.println(departement);
-        System.out.println(courses);
+        if (courses.size() == 0) {
+            result_text = result_text + "N/A";
+        }else {
+            result_text = result_text + "   - " + courses.get(0);
+            for (int i = 1; i < courses.size(); i++) {
+                result_text = result_text + "\n   - " + courses.get(i);
+            }
+        }
+        
+        System.out.println(result_text);
+
+
     }
 
     @FXML
