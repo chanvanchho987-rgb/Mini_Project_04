@@ -65,12 +65,12 @@ public class Controller {
         if (date_picker.getValue() != null) {
             dob = date_picker.getValue().toString();
         }
-        
+
         //
         String departement = "N/A";
         if (ratiobutton_gtr.isSelected()) {
             departement = "GTR";
-        } 
+        }
         if (ratiobutton_ams.isSelected()) {
             departement = "AMS";
         }
@@ -92,23 +92,21 @@ public class Controller {
 
         //
         String result_text = "Name: " + name + "\n" +
-                             "Date of Birth: " + dob + "\n" +
-                             "Departement: " + departement + "\n" +
-                             "Courses: " + "\n" + 
-                             "   - " + String.join("\n   - ", courses);
+                "Date of Birth: " + dob + "\n" +
+                "Departement: " + departement + "\n" +
+                "Courses: " + "\n" +
+                "   - " + String.join("\n   - ", courses);
 
-        // 
+        //
         if (courses.size() == 0) {
             result_text = result_text + "N/A";
-        }else {
-            result_text = result_text + "   - " + courses.get(0);
+        } else {
             for (int i = 1; i < courses.size(); i++) {
                 result_text = result_text + "\n   - " + courses.get(i);
             }
         }
-        
-        System.out.println(result_text);
 
+        System.out.println(result_text);
 
     }
 
