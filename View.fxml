@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,7 +34,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="Save" layoutX="462.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Save">
+      <Button fx:id="submit" layoutX="462.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Submit">
          <font>
             <Font size="25.0" />
          </font>
@@ -58,39 +59,42 @@
             <Font size="22.0" />
          </font>
       </Label>
-      <TextField layoutX="415.0" layoutY="179.0" prefHeight="36.0" prefWidth="313.0" />
-      <DatePicker layoutX="415.0" layoutY="234.0" prefHeight="36.0" prefWidth="313.0" />
-      <RadioButton layoutX="415.0" layoutY="397.0" mnemonicParsing="false" text="GIC">
+      <TextField fx:id="textfile_name" layoutX="415.0" layoutY="179.0" prefHeight="36.0" prefWidth="313.0" />
+      <DatePicker fx:id="date_picker" layoutX="415.0" layoutY="234.0" prefHeight="36.0" prefWidth="313.0" />
+      <RadioButton fx:id="ratiobutton_gic" layoutX="415.0" layoutY="397.0" mnemonicParsing="false" text="GIC">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Group_departement_GTR" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="ratiobutton_gtr" layoutX="415.0" layoutY="325.0" mnemonicParsing="false" text="GTR" toggleGroup="$Group_departement_GTR">
          <font>
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="415.0" layoutY="325.0" mnemonicParsing="false" text="GTR">
+      <RadioButton fx:id="ratiobutton_ams" layoutX="415.0" layoutY="361.0" mnemonicParsing="false" text="AMS" toggleGroup="$Group_departement_GTR">
          <font>
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="415.0" layoutY="361.0" mnemonicParsing="false" text="AMS">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </RadioButton>
-      <Label layoutX="840.0" layoutY="603.0" text="Result: ">
+      <Label fx:id="result" layoutX="840.0" layoutY="603.0" text="Result: ">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <CheckBox layoutX="415.0" layoutY="462.0" mnemonicParsing="false" text="Network">
+      <CheckBox fx:id="checkboxnetwork" layoutX="415.0" layoutY="462.0" mnemonicParsing="false" text="Network">
          <font>
             <Font size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="415.0" layoutY="499.0" mnemonicParsing="false" text="Operating System">
+      <CheckBox fx:id="checkbox_operating" layoutX="415.0" layoutY="499.0" mnemonicParsing="false" text="Operating System">
          <font>
             <Font size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="415.0" layoutY="534.0" mnemonicParsing="false" text="OOP">
+      <CheckBox fx:id="checkbox_oop" layoutX="415.0" layoutY="534.0" mnemonicParsing="false" text="OOP">
          <font>
             <Font size="18.0" />
          </font>
