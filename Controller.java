@@ -58,17 +58,6 @@ public class Controller {
 
     @FXML
     void initialize() {
-        assert Group_departement_GTR != null : "fx:id=\"Group_departement_GTR\" was not injected: check your FXML file 'View.fxml'.";
-        assert checkbox_oop != null : "fx:id=\"checkbox_oop\" was not injected: check your FXML file 'View.fxml'.";
-        assert checkbox_operating != null : "fx:id=\"checkbox_operating\" was not injected: check your FXML file 'View.fxml'.";
-        assert checkboxnetwork != null : "fx:id=\"checkboxnetwork\" was not injected: check your FXML file 'View.fxml'.";
-        assert date_picker != null : "fx:id=\"date_picker\" was not injected: check your FXML file 'View.fxml'.";
-        assert ratiobutton_ams != null : "fx:id=\"ratiobutton_ams\" was not injected: check your FXML file 'View.fxml'.";
-        assert ratiobutton_gic != null : "fx:id=\"ratiobutton_gic\" was not injected: check your FXML file 'View.fxml'.";
-        assert ratiobutton_gtr != null : "fx:id=\"ratiobutton_gtr\" was not injected: check your FXML file 'View.fxml'.";
-        assert result != null : "fx:id=\"result\" was not injected: check your FXML file 'View.fxml'.";
-        assert submit != null : "fx:id=\"submit\" was not injected: check your FXML file 'View.fxml'.";
-        assert textfile_name != null : "fx:id=\"textfile_name\" was not injected: check your FXML file 'View.fxml'.";
 
     }
 
