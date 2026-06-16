@@ -33,7 +33,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="Save" layoutX="462.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Save">
+      <Button fx:id="Save" layoutX="258.0" layoutY="593.0" mnemonicParsing="false" onAction="#on_submit" text="Save">
          <font>
             <Font size="25.0" />
          </font>
@@ -75,7 +75,7 @@
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <Label layoutX="840.0" layoutY="603.0" text="Result: ">
+      <Label layoutX="759.0" layoutY="603.0" text="Result: ">
          <font>
             <Font size="22.0" />
          </font>
