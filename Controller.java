@@ -1,4 +1,5 @@
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -53,7 +54,47 @@ public class Controller {
 
     @FXML
     void on_submit(ActionEvent event) {
+        //
+        String name = "N/A";
+        if (!textfile_name.getText().isEmpty()) {
+            name = textfile_name.getText();
+        }
 
+        //
+        String dob = "N/A";
+        if (date_picker.getValue() != null) {
+            dob = date_picker.getValue().toString();
+        }
+        
+        //
+        String departement = "N/A";
+        if (ratiobutton_gtr.isSelected()) {
+            departement = "GTR";
+        } 
+        if (ratiobutton_ams.isSelected()) {
+            departement = "AMS";
+        }
+        if (ratiobutton_gic.isSelected()) {
+            departement = "GIC";
+        }
+
+        //
+        ArrayList<String> courses = new ArrayList<>();
+        if (checkbox_oop.isSelected()) {
+            courses.add("Networks");
+        }
+        if (checkbox_operating.isSelected()) {
+            courses.add("Operating Systems");
+        }
+        if (checkboxnetwork.isSelected()) {
+            courses.add("OOP");
+        }
+
+        // 
+        System.out.println(name);
+        System.out.println(dob);
+        System.out.println(departement);
+        System.out.println(courses);
     }
 
     @FXML
